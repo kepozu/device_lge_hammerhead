@@ -20,6 +20,9 @@
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
+# Inherit from the BootleggersRom configuration
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+
 PRODUCT_NAME := full_hammerhead
 PRODUCT_DEVICE := hammerhead
 PRODUCT_BRAND := Android
